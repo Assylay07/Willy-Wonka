@@ -11,7 +11,7 @@ function showSignup() {
 
 // Константа для базового URL, чтобы менять в одном месте
 // Добавляем /api, так как на бэкенде роуты обычно висят там
-const API_BASE_URL = "https://willywonka-six.vercel.app/api";
+const API_BASE_URL = "https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/api";
 
 // ---------------------------
 // 📘 Sign Up Function
