@@ -119,7 +119,7 @@ $(document).ready(function () {
         btn.prop("disabled", true).text("Sending...");
 
         try {
-            const res = await fetch("http://localhost:5000/api/contact", {
+            const res = await fetch("https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, email, message })
