@@ -11,7 +11,7 @@ function showSignup() {
 
 
 // Добавляем /api, так как на бэкенде роуты обычно висят там
-const API_BASE_URL = "https://willywonka-six.vercel.app/api/auth/login";
+const API_BASE_URL = "https://willywonka-six.vercel.app//api/auth/login";
 
 //Sign Up Function
 async function signUp() {

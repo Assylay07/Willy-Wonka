@@ -66,4 +66,4 @@ const startServer = async () => {
 
 startServer(); // вызываем отдельно
 
-
+export default app;
