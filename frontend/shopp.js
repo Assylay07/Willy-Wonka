@@ -1,15 +1,9 @@
-/* =====================================================
-    ✅ WONKA SHOP LOGIC (shopp.js)
-===================================================== */
-
-// Функция уведомлений как в рабочем скрипте
 function showNotification(msg) {
     const toast = document.createElement('div');
-    toast.className = "notification"; // убедись, что в CSS есть стили для .notification
+    toast.className = "notification"; 
     toast.textContent = msg;
     document.body.appendChild(toast);
     
-    // Стили на случай, если их нет в CSS
     toast.style.cssText = `
         position: fixed; bottom: 20px; right: 20px; 
         background: #4e342e; color: white; padding: 15px; 
@@ -20,7 +14,7 @@ function showNotification(msg) {
 }
 
 $(document).ready(function () {
-    console.log("✅ shopp.js initialized");
+    console.log(" shopp.js initialized");
 
     let cart = JSON.parse(localStorage.getItem("wonkaCart")) || [];
 
@@ -76,9 +70,7 @@ $(document).ready(function () {
 
     renderCart();
 
-    /* =====================================================
-        📤 ОТПРАВКА ЗАКАЗА (Аналог рабочего скрипта)
-    ===================================================== */
+   
     $("#checkoutForm").on("submit", async function (e) {
         e.preventDefault();
         console.log("🚀 Submit triggered");

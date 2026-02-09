@@ -9,13 +9,11 @@ function showSignup() {
   document.getElementById("signupBox").classList.remove("hidden");
 }
 
-// Константа для базового URL, чтобы менять в одном месте
-// Добавляем /api, так как на бэкенде роуты обычно висят там
-const API_BASE_URL = "https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/api";
 
-// ---------------------------
-// 📘 Sign Up Function
-// ---------------------------
+// Добавляем /api, так как на бэкенде роуты обычно висят там
+const API_BASE_URL = "https://willywonka-six.vercel.app/api/auth/login";
+
+//Sign Up Function
 async function signUp() {
   const name = document.getElementById("signupName").value.trim();
   const email = document.getElementById("signupEmail").value.trim();
@@ -38,7 +36,6 @@ async function signUp() {
   }
 
   try {
-    // Используем API_BASE_URL + /auth/register
     const res = await fetch(`${API_BASE_URL}/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -63,9 +60,7 @@ async function signUp() {
   }
 }
 
-// ---------------------------
-// 🔐 Log In Function
-// ---------------------------
+// Log In Function
 async function logIn() {
   const email = document.getElementById("loginEmail").value.trim();
   const password = document.getElementById("loginPassword").value;
@@ -76,7 +71,6 @@ async function logIn() {
   }
 
   try {
-    // Используем API_BASE_URL + /auth/login
     const res = await fetch(`${API_BASE_URL}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

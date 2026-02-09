@@ -75,7 +75,7 @@ function showNotification(msg) {
 // 🛠 JQUERY MAIN BLOCK (API + Interactions)
 // ===========================================
 $(document).ready(function () {
-    const API_BASE = "https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/api";
+    const API_BASE = "https://willywonka-six.vercel.app/api";
 
     // --- 1. Скролл и Прогресс ---
     if ($("#scrollBar").length === 0) $("body").prepend('<div id="scrollBar" style="position:fixed; top:0; left:0; height:5px; background:gold; z-index:9999; width:0%;"></div>');

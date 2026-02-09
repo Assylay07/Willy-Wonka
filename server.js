@@ -56,7 +56,7 @@ const startServer = async () => {
     console.log("✅ MongoDB connected");
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/`);
+      console.log(`🚀 Server running on https://willywonka-six.vercel.app`);
     });
   } catch (error) {
     console.error("❌ MongoDB connection failed:", error);

@@ -1,16 +1,8 @@
-// ===========================================
-// 🍭 GLOBAL SCRIPTS (должны быть первыми)
-// ===========================================
-
-// Проверка токена (только на защищённых страницах, например willy.html)
 const token = localStorage.getItem("token");
 if (!token && window.location.pathname !== "/auth.html" && window.location.pathname !== "/index.html") {
     window.location.href = "/auth.html"; // редирект на логин
 }
 
-// =========================
-// Mood / конфеты / эффекты
-// =========================
 function setMood(type) {
     console.log("Active Mood:", type);
     const body = document.body;
@@ -65,9 +57,7 @@ function showNotification(msg) {
     setTimeout(() => toast.remove(), 3000);
 }
 
-// =========================
-// READY BLOCK
-// =========================
+
 $(document).ready(function () {
     // 1. Scroll Progress Bar
     $(window).on("scroll", function () {
@@ -119,7 +109,7 @@ $(document).ready(function () {
         btn.prop("disabled", true).text("Sending...");
 
         try {
-            const res = await fetch("https://willywonka-git-main-assylays-projects-a9c5acba.vercel.app/api/contact", {
+            const res = await fetch("https://willywonka-six.vercel.app/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, email, message })
